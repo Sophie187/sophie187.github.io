@@ -1,0 +1,40 @@
+.container {
+  border: 5px solid #009999;
+  margin-right: 80%;
+  text-align: center;
+  margin-bottom: 15%;
+  
+}
+
+p { 
+font-size: 30px;
+font-family: 'Amatic SC', cursive;
+padding: 30px;
+margin-bottom: -1px; 
+margin-top: -1px;
+color: white;
+
+
+}
+
+.north {
+  background: #ff4d4d;
+
+  
+}
+
+.east {
+  background: #ffff66;
+ 
+}
+
+.south {
+  background:  #99ffdd;
+ 
+}
+
+.west {
+  background: #bf80ff;
+
+}
+
