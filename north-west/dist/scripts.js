@@ -16,7 +16,7 @@ if (number > 100){
     $('.east').text(' ez csak egy közönséges szám')
 }
 
-if (word=== 'cool') {
+if (word === 'cool') {
     $('.south').text('A DOM Ereje')
 }else  {
     $('.west').text('A DOM Ereje')

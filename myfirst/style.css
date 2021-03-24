@@ -1,0 +1,58 @@
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 400px;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.description {
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    opacity: 0.4;
+    color: honeydew;
+    margin: auto;
+}
+
+.firstimg {
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-right {
+    width: 20px;
+    height: 20px;
+    transform: scaleX(-1);
+}
+
+.thumbnailslist {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.thumbnailsimg {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 140px;
+    height: 80px;
+}
