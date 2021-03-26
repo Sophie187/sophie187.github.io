@@ -1,39 +1,37 @@
 let currentphoto = 0
 let imagesData = [{
         photo: 'images/jellyfish.jpg',
-        title: 'Jellyfish',
+        title: 'Aurelia aurita',
         description: 'Fascinating, elegant, and mysterious to watch in the water, take a jellyfish out of the water, and it becomes a much less fascinating blob. This is because jellyfish are about 95 percent water.'
     },
     {
         photo: 'images/jellyfish2.jpg',
-        title: 'Jellyfish2',
+        title: 'Chiropsalmus Quadrigatus',
         description: 'There are almost 200 known species of jellyfish drifting through our planet’s seas. While many of them are actually quite harmless, there are several species that have highly venomous stinging cells that can cause serious consequences for humans—such as extreme pain or even death.'
     },
     {
         photo: 'images/jellyfish3.jpg',
-        title: 'Jellyfish3',
-        description: 'What happened here, why is this a very nice image'
+        title: 'Irukandji',
+        description: 'Jellyfish have the ability to sting with their tentacles. While the severity of stings varies, in humans, most jellyfish stings result only in minor discomfort.'
     },
     {
         photo: 'images/jellyfish4.jpg',
-        title: 'Jellyfish4',
-        description: 'What happened here, why is this a very nice image'
+        title: 'Morbakka Fenneri',
+        description: 'Only about five percent of the body of a jellyfish is solid matter; the rest is water.'
     },
     {
         photo: 'images/jellyfish5.jpg',
-        title: 'Jellyfish5',
+        title: 'Alatina Alata',
         description: 'What happened here, why is this a very nice image'
     },
     {
         photo: 'images/jellyfish6.jpg',
-        title: 'Jellyfish6',
+        title: 'Lion jellyfish',
         description: 'What happened here, why is this a very nice image'
     }
 ];
 
 
-
-$('#jellyfish').attr('src', imagesData[currentphoto].photo);
 
 let loadPhoto = (photoNumber) => {
     $('#jellyfish').attr('src', imagesData[photoNumber].photo);
@@ -45,11 +43,11 @@ let loadPhoto = (photoNumber) => {
     $('li').removeClass("active")
     $('li').eq(photoNumber).addClass("active")
 
+
+
 };
 // ...
 
-
-loadPhoto(currentphoto);
 $('.arrow-right').click(() => {
     if (currentphoto < 6) {
         currentphoto++;
@@ -64,11 +62,10 @@ $('.arrow').click(() => {
     loadPhoto(currentphoto);
 })
 
-let thumbnails = ['Jellyfish', 'Jellyfish2', 'Jellyfish3']
 
 imagesData.forEach((item, index) => {
     $('.thumbnailslist').append(`<li target="_blank" href="images/jellyfish.jpg">
-    <div class="tooltip">Chironex Fleckeri</div>
+    <div class="tooltip">${item.title}</div>
      <div class="thumbnails"</div>
             <img class="thumbnailsimg"  data-index="${index}" src="${item.photo}" alt="jellyfish"></li>`
 
@@ -81,6 +78,6 @@ $('.thumbnailsimg').click((event) => {
     console.log(indexClicked)
     loadPhoto(indexClicked)
 
-
-
 })
+
+loadPhoto(currentphoto);
